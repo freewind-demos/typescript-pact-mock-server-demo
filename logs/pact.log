@@ -1,0 +1,36 @@
+I, [2019-01-03T22:47:49.074619 #90679]  INFO -- : Registered expected interaction GET /hello
+D, [2019-01-03T22:47:49.074921 #90679] DEBUG -- : {
+  "description": "a hello to typescript",
+  "providerState": "I dont need to do anything to be ready",
+  "request": {
+    "method": "GET",
+    "path": "/hello"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": "Hi!"
+  }
+}
+I, [2019-01-03T22:47:49.089466 #90679]  INFO -- : Received request GET /hello
+D, [2019-01-03T22:47:49.089582 #90679] DEBUG -- : {
+  "path": "/hello",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "User-Agent": "axios/0.18.0",
+    "Host": "localhost:9999",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2019-01-03T22:47:49.089740 #90679]  INFO -- : Found matching response for GET /hello
+D, [2019-01-03T22:47:49.089818 #90679] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": "Hi!"
+}
+I, [2019-01-03T22:47:49.102916 #90679]  INFO -- : Writing pact for typescript-pact-provider-demo to /Users/freewind/workspace/typescript-pact-mock-server-demo/pacts/typescript-pact-consumer-demo-typescript-pact-provider-demo.json

@@ -1,0 +1,29 @@
+{
+  "consumer": {
+    "name": "typescript-pact-consumer-demo"
+  },
+  "provider": {
+    "name": "typescript-pact-provider-demo"
+  },
+  "interactions": [
+    {
+      "description": "a hello to typescript",
+      "providerState": "I dont need to do anything to be ready",
+      "request": {
+        "method": "GET",
+        "path": "/hello"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": "Hi!"
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
